@@ -1,7 +1,8 @@
 export class UpdateTextBlockDto {
+    readonly id: number;
     readonly name: string;
-    readonly image: string;
+    readonly image_name: string;
     readonly text: string;
     readonly group: string;
-    readonly id: number;
+    readonly file_id: number;
 }

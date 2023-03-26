@@ -6,7 +6,6 @@ import {User} from "../users/users.model";
 import {UsersService} from "../users/users.service";
 import {AuthService} from "../auth/auth.service";
 import {UpdateProfileDto} from "./dto/update-profile.dto";
-import {where} from "sequelize";
 
 @Injectable()
 export class ProfileService {

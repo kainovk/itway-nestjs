@@ -3,7 +3,7 @@ import {Column, DataType, Model, Table} from "sequelize-typescript";
 interface TextBlockCreationAttributes {
     search_name: string;
     name: string;
-    image: string;
+    image_name: string;
     text: string;
     group: string;
 }
@@ -20,7 +20,7 @@ export class TextBlock extends Model<TextBlock, TextBlockCreationAttributes> {
     name: string;
 
     @Column({type: DataType.STRING})
-    image: string;
+    image_name: string;
 
     @Column({type: DataType.STRING})
     text: string;

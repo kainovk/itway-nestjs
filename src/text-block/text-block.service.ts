@@ -37,7 +37,7 @@ export class TextBlockService {
 
         await this.textBlockRepository.update({
             name: dto.name,
-            image: dto.image,
+            image_name: dto.image_name,
             text: dto.text,
             group: dto.group
         }, {where: {id: dto.id}});
